@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sultan's Dine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Sultan's Dine</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+  </nav>
+    <div class="container">
+    
+        <div class="special-menu">Special Menu for Some Events</div>
+
+        <div class="sections-wrapper">
+            <div class="menu-section">
+                <div class="section-title">Weddings</div>
+                <div class="menu-options">
+                    <button class="menu-item" onclick="showItems('wedding-starter')">Starter</button>
+                    <button class="menu-item" onclick="showItems('wedding-main')">Main Course</button>
+                    <button class="menu-item" onclick="showItems('wedding-dessert')">Dessert</button>
+                </div>
+                <div class="menu-items" id="wedding-starter">
+                    <ul>
+                        <li>Tomato Basil Soup</li>
+                        <li>Stuffed Mushrooms</li>
+                        <li>Spring Rolls</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="wedding-main">
+                    <ul>
+                        <li>Grilled Chicken with Garlic Mashed Potatoes</li>
+                        <li>Vegetable Lasagna</li>
+                        <li>Beef Wellington</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="wedding-dessert">
+                    <ul>
+                        <li>Chocolate Fondue</li>
+                        <li>Red Velvet Cake</li>
+                        <li>Macarons</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="section-title">Corporate Events</div>
+                <div class="menu-options">
+                    <button class="menu-item" onclick="showItems('corporate-starter')">Starter</button>
+                    <button class="menu-item" onclick="showItems('corporate-main')">Main Course</button>
+                    <button class="menu-item" onclick="showItems('corporate-dessert')">Dessert</button>
+                </div>
+                <div class="menu-items" id="corporate-starter">
+                    <ul>
+                        <li>Caesar Salad</li>
+                        <li>Chicken Skewers</li>
+                        <li>Bruschetta</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="corporate-main">
+                    <ul>
+                        <li>Grilled Salmon with Lemon Butter</li>
+                        <li>Chicken Alfredo Pasta</li>
+                        <li>Vegetable Stir Fry</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="corporate-dessert">
+                    <ul>
+                        <li>Cheesecake</li>
+                        <li>Chocolate Mousse</li>
+                        <li>Fruit Tart</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="section-title">Buffets</div>
+                <div class="menu-options">
+                    <button class="menu-item" onclick="showItems('buffet-starter')">Starter</button>
+                    <button class="menu-item" onclick="showItems('buffet-main')">Main Course</button>
+                    <button class="menu-item" onclick="showItems('buffet-dessert')">Dessert</button>
+                </div>
+                <div class="menu-items" id="buffet-starter">
+                    <ul>
+                        <li>Stuffed Grape Leaves</li>
+                        <li>Potato Salad</li>
+                        <li>Chicken Quesadillas</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="buffet-main">
+                    <ul>
+                        <li>Beef Stir Fry</li>
+                        <li>Grilled Shrimp Skewers</li>
+                        <li>Vegetarian Curry</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="buffet-dessert">
+                    <ul>
+                        <li>Brownies</li>
+                        <li>Fruit Salad</li>
+                        <li>Rice Pudding</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="section-title">Birthday Parties</div>
+                <div class="menu-options">
+                    <button class="menu-item" onclick="showItems('birthday-starter')">Starter</button>
+                    <button class="menu-item" onclick="showItems('birthday-main')">Main Course</button>
+                    <button class="menu-item" onclick="showItems('birthday-dessert')">Dessert</button>
+                </div>
+                <div class="menu-items" id="birthday-starter">
+                    <ul>
+                        <li>Mini Tacos</li>
+                        <li>Fried Chicken Wings</li>
+                        <li>Cheese Platter</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="birthday-main">
+                    <ul>
+                        <li>Pasta Primavera</li>
+                        <li>BBQ Pulled Pork Sandwiches</li>
+                        <li>Grilled Veggie Skewers</li>
+                    </ul>
+                </div>
+                <div class="menu-items" id="birthday-dessert">
+                    <ul>
+                        <li>Ice Cream Sundae</li>
+                        <li>Chocolate Cake</li>
+                        <li>Cupcakes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-prices">
+        <div class="price-section">
+          <h3>Starter Prices</h3>
+          <ul>
+            <li>Tomato Basil Soup - Tk 700</li>
+            <li>Stuffed Mushrooms - Tk 400</li>
+            <li>Spring Rolls - Tk 3</li>
+            <li>Caesar Salad - Tk 4</li>
+            <li>Mini Tacos - Tk 5</li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+      
+        <div class="price-section">
+          <h3>Main Course Prices</h3>
+          <ul>
+            <li>Grilled Chicken - Tk 12</li>
+            <li>Vegetable Lasagna - Tk 10</li>
+            <li>Beef Wellington - Tk 15</li>
+            <li>Chicken Alfredo Pasta - Tk 11</li>
+            <li>BBQ Pulled Pork Sandwich - Tk 10</li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+      
+        <div class="price-section">
+          <h3>Dessert Prices</h3>
+          <ul>
+            <li>Chocolate Fondue - Tk 6</li>
+            <li>Red Velvet Cake - Tk 5</li>
+            <li>Ice Cream Sundae - Tk 4</li>
+            <li>Fruit Tart - Tk 5</li>
+            <li>Brownies - Tk 3</li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Sultans Dine</h3>
+        <p>Authentic taste of tradition. Serving the best biryani in town with love and legacy.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sultans Dine. All rights reserved.</p>
+    </div>
+  </footer> 
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+  <script src="script.js"></script> 
+</body>
+</html>  
